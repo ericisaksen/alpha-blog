@@ -1,6 +1,28 @@
+$navbar-default-bg: #1a1a1a;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body{
-
+.center{
+  text-align: center;
+}
+.navbar{
+  border-radius: 0;
+  .navbar-brand{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+.jumbotron{
+  h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 .25em;
+  }
+  .btn{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
 }
