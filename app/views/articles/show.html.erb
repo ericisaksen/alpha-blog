@@ -11,7 +11,7 @@
               Created by: <%= link_to @article.user.username, user_path(@article.user) %>
               </li>
               <li><small><%= @article.user.username %> has created <%= pluralize(@article.user.articles.count, "article") if @article.user.articles %></small></li>
-              <li><p><%= link_to "View all #{pluralize(@article.user.articles.count, "article") if @article.user.articles} by #{@article.user.username}", user_path(@article.user), class: "btn btn-xs btn-success" %></p></li>
+              <li><p><%= link_to "View all articles by #{@article.user.username}", user_path(@article.user), class: "btn btn-xs btn-warning" %></p></li>
             </div>
           </div>
         </ul>
