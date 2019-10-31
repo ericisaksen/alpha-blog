@@ -31,3 +31,13 @@ $navbar-default-bg: #1a1a1a;
   margin-top: 1em;
   padding-top: 1em;
 }
+.listing{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+  img{
+    margin: 0 auto 1em;
+  }
+}
