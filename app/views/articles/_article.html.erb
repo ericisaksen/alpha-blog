@@ -11,6 +11,9 @@
           <p class="small">Created By: <%= article.user.username if article.user %>, 
               <%= time_ago_in_words(article.created_at) %> ago<br/>
               Last Updated: <%= time_ago_in_words(article.updated_at) %> ago</p>
+          <% if article.categories.any? %>
+            <p>Categories: <%= render article.categories %></p>
+          <% end %>
         </div>
       </div>
       <div class="article-actions">

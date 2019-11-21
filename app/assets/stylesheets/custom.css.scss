@@ -41,3 +41,14 @@ $navbar-default-bg: #1a1a1a;
     margin: 0 auto 1em;
   }
 }
+.badge{
+  background-color: #1a1a1a;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  > a{
+    color: #fff;
+  }
+}
+.input_checkbox input{
+  width: auto !important;
+}
