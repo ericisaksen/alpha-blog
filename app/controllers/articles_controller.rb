@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   
   def index
     @articles = Article.paginate(page: params[:page], per_page: 3)
+    @ip = request.env['HTTP_X_REAL_IP'] || request.env['REMOTE_ADDR']
   end
   
   def new
@@ -48,7 +49,7 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.require(:article).permit(:title, :description, category_ids: [])
+    params.require(:article).permit(:title, :description, :user_ip_address, category_ids: [])
   end
   def require_same_user
     if current_user != @article.user and !current_user.admin?
